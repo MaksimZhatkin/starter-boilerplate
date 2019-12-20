@@ -1,0 +1,56 @@
+.shop {
+display: flex;
+flex-wrap: wrap;
+margin: 0 -20px 0 -10px;
+
+	&__title {
+		text-transform: uppercase;
+		font-size: 32px;
+		font-weight: 400;
+		width: 100%;
+		margin: 0 10px 10px;
+		line-height: 70%;
+	}
+}
+
+
+.prod {
+	display: flex;
+	justify-content: space-around;
+
+	&-card {
+		padding: 10px 12px 14px;
+		width: 220px;
+		background-color: $white;
+		margin: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+
+		&__description {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&__text {
+			text-align: center;
+			margin: 15px 0; 
+		}
+
+		&__button {
+			background-color: $gray;
+			color: $white;
+			text-align: center;
+			display: inline-block;
+			width: 100%;
+			padding: 15px;
+			border-radius: 4px;
+
+			&:hover {
+				background-color: $primary;
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.header-nav {
+
+	&__item {
+		display: inline-block;
+		font-size: 18px;
+
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 20px 25px;
+
+		&:hover {
+			color: $primary;
+			background-color: $gray-dark;
+		}
+	}
+}

@@ -1,0 +1,65 @@
+.tab-bar {
+	&-wrap {
+		width: 100%;
+		margin: 47px 20px 0 10px;
+		min-height: 290px;
+		background-color: $gray-dark;
+		flex-grow: 1;
+		color: $white;
+	}
+
+	&__list {
+		background-color: $gray;
+		display: flex;
+
+		&-item {
+			text-align: center;
+			display: inline-block;
+			padding: 17px 0;
+			width: 100%;
+
+			&--active {
+				background-color: $gray-dark;
+			}
+		}
+
+		&-title {
+			font-size: 18px;
+			font-weight: 500;
+		}
+	}
+
+	&__tilte {
+		display: inline-block;
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	&__item {
+		padding: 20px;
+
+		&-img {
+			width: 200px;
+		}
+
+		&-content {
+			display: flex;
+		}
+
+		&-text {
+			max-width: 370px;
+			margin: 0 auto;
+		}
+
+		&-title {
+			line-height: 85%;
+			font-size: 24px;
+			text-transform: uppercase;
+			margin-bottom: 26px;
+		}
+
+		&-description {
+			font-size: 18px;
+		}
+	}
+}

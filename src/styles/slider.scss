@@ -1,0 +1,33 @@
+.slider {
+	height: 466px;
+	background: no-repeat center url('../img/slider-photo.jpg');
+
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	padding-bottom: 15px;
+
+	&-indicator {
+		margin: 0 auto;
+
+		&__item {
+			display: inline;
+		}
+
+		&__item + &__item {
+			margin-left: 5px;
+		}
+
+		&__dot {
+			width: 15px;
+			height: 15px;
+			background-color: $gray;
+			border-radius: 25px;
+			cursor: pointer;
+
+			&--selected {
+				background-color: $primary;
+			}
+		}
+	}
+}

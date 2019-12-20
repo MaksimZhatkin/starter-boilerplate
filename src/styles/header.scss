@@ -1,0 +1,35 @@
+.header{
+	padding: 40px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&-company {
+		display: flex;
+		align-items: center;
+
+		&__title {
+			color: $gray;
+			font-size: 24px;
+			text-transform: uppercase;
+			font-weight: 500;
+		}
+	}
+
+	&-contacts {
+
+		&__link {
+			font-size: 20px;
+			color: $gray;
+			display: block;
+			text-align: right;
+			margin-bottom: 20px;
+		}
+
+		&__button {
+			width: 218px;
+			height: 47px;
+			border-radius: 4px;
+		}
+	}
+}

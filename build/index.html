@@ -1,16 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title></title>
-  </head>
-  <body>
-    <h1>Pug - node template engine</h1>
-    <div class="col" id="container">
-      <p>Get on it!</p>
-      <p>
-        Pug is a terse and simple templating language with a
-        strong focus on performance and powerful features.
-      </p>
-    </div>
-  </body>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>tz-kontur</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header class="wrapper wrapepr--gray">
+		<div class="header container">
+			<div class="header-company">
+				<img src="./img/logo.png" alt="logo" class="header-company__logo">
+				<h2 class="header-company__title">
+					имя<br> компании
+				</h2>
+			</div>
+
+			<div class="header-contacts">
+				<a class="header-contacts__link" href="tel:+7 (999) 999-99-99">+7 (999) 999-99-99</a>
+				<button class="header-contacts__button button button--gray">Кнопка</button>
+			</div>
+		</div>
+	</header>
+
+	<header class="wrapper wrapper--gray">
+		<div class="container">
+			<ul class="header-nav">
+				<li class="header-nav__item">
+					<a href="#" class="header-nav__link">Главная</a>
+				</li>
+				<li class="header-nav__item">
+					<a href="#" class="header-nav__link">Каталог</a>
+				</li>
+				<li class="header-nav__item">
+					<a href="#" class="header-nav__link">Доставка и оплата</a>
+				</li>
+				<li class="header-nav__item">
+					<a href="#" class="header-nav__link">Контакты</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="slider wrapper">
+		<ul class="slider-indicator">
+			<li class="slider-indicator__item">
+				<button class="slider-indicator__dot"></button>
+			</li>
+			<li class="slider-indicator__item">
+				<button class="slider-indicator__dot slider-indicator__dot--selected"></button>
+			</li>
+			<li class="slider-indicator__item">
+				<button class="slider-indicator__dot"></button>
+			</li>
+		</ul>
+	</div>
+
+	<main class="wrapper">
+		<div class="container main-container">
+
+			<section class="flex-wrap">
+				<nav class="catalog">
+					<h2 class="catalog__title">каталог</h2>
+					<ul class="category-list">
+
+						<li class="category-list__item"><a href="#" class="category-list__link">Автомобили</a></li>
+
+						<li class="category-list__item category-list__item--active">
+
+							<a href="#" class="category-list__link category-list__link--active">Бытовая техника</a>
+
+							<ul class="category-inner category-inner--list">
+								<li class="category-list__item category-list__item--inner">
+									<a href="#" class="category-list__link">• Микроволновки</a>
+								</li>
+
+								<li class="category-list__item category-list__item--inner">
+									<a href="#" class="category-list__link">• Холодильники</a>
+								</li>
+
+								<li class="category-list__item category-list__item--inner">
+									<a href="#" class="category-list__link">• Посудомоечные машины</a>
+								</li>
+								<li class="category-list__item category-list__item--inner">
+									<a href="#" class="category-list__link">• Чайники</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="category-list__item">
+							<a href="#" class="category-list__link">Мобильная техника</a>
+						</li>
+
+						<li class="category-list__item">
+							<a href="#" class="category-list__link">Компьютеры</a>
+						</li>
+
+						<li class="category-list__item">
+							<a href="#" class="category-list__link">Одежда</a>
+						</li>
+
+						<li class="category-list__item">
+							<a href="#" class="category-list__link">Недвижимость</a>
+						</li>
+					</ul>
+				</nav>
+
+
+				<section class="shop">
+					<h2 class="shop__title">загаловок</h2>
+
+					<div class="prod-card">
+						<figure class="prod-card__description">
+							<img src="img/nophoto.jpg" alt="nophoto" class="prod-card__photo">
+							<figcaption class="prod-card__text">
+								Тут хороший товар с очень длинным подробным описанием товара
+							</figcaption>
+						</figure>
+						<a href="#" class="prod-card__button">Купить</a>
+					</div>
+
+					<div class="prod-card">
+						<figure class="prod-card__description">
+							<img src="img/nophoto.jpg" alt="nophoto" class="prod-card__photo">
+							<figcaption class="prod-card__text">Тут хороший товар с длинным описанием</figcaption>
+						</figure>
+						<a href="#" class="prod-card__button">Купить</a>
+					</div>
+
+					<div class="prod-card">
+						<figure class="prod-card__description">
+							<img src="img/nophoto.jpg" alt="nophoto" class="prod-card__photo">
+							<figcaption class="prod-card__text">Тут хороший товар</figcaption>
+						</figure>
+						<a href="#" class="prod-card__button">Купить</a>
+					</div>
+
+					<div class="prod-card">
+						<figure class="prod-card__description">
+							<img src="img/nophoto.jpg" alt="nophoto" class="prod-card__photo">
+							<figcaption class="prod-card__text">Тут хороший товар</figcaption>
+						</figure>
+						<a href="#" class="prod-card__button">Купить</a>
+					</div>
+
+					<div class="prod-card">
+						<figure class="prod-card__description">
+							<img src="img/nophoto.jpg" alt="nophoto" class="prod-card__photo">
+							<figcaption class="prod-card__text">Тут хороший товар</figcaption>
+						</figure>
+						<a href="#" class="prod-card__button">Купить</a>
+					</div>
+
+					<div class="prod-card">
+						<figure class="prod-card__description">
+							<img src="img/nophoto.jpg" alt="nophoto" class="prod-card__photo">
+							<figcaption class="prod-card__text">Тут хороший товар</figcaption>
+						</figure>
+						<a href="#" class="prod-card__button">Купить</a>
+					</div>
+
+					<div class="tab-bar-wrap">
+						<ul class="tab-bar__list">
+							<li class="tab-bar__list-item">
+								<h3 class="tab-bar__list-title">Tab 1</h3>
+							</li>
+							<li class="tab-bar__list-item tab-bar__list-item--active">
+								<h3 class="tab-bar__list-title">Tab 2</h3>
+							</li>
+							<li class="tab-bar__list-item">
+								<h3 class="tab-bar__list-title">Tab 3</h3>
+							</li>
+						</ul>
+
+							<div class="tab-bar__item">
+								<figure class="tab-bar__item-content">
+									<img class="tab-bar__item-img" src="img/nophoto.jpg" alt="nophoto">
+									<figcapture class="tab-bar__item-text">
+										<h3 class="tab-bar__item-title">Tab 2</h3>
+										<p class="tab-bar__item-description">
+											Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений.
+										</p>
+									</figcapture>
+								</figure>
+							</div>
+
+						</div>
+				</section>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer wrapper wrapper--black">
+		<div class="container">
+			<p class="footer__text">© 2017 Все права защищены</p>
+		</div>
+	</footer>
+</body>
 </html>

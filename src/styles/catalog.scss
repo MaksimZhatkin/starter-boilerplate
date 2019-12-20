@@ -1,0 +1,46 @@
+.catalog {
+	min-width: 220px;
+	align-self: stretch;
+	margin-right: 18px;
+
+	&__title {
+		text-transform: uppercase;
+		padding: 16px;
+		color: $white;
+		background-color: $gray-dark;
+		font-weight: 400;
+		font-size: 16px;
+	}
+}
+
+.category-list {
+	background-color: $white;
+
+	&__link {
+		display: inline-block;
+		padding: 12px 0 12px 14px;
+
+			&:hover {
+				text-decoration: underline;
+			}
+
+		&--active {
+			text-decoration: underline;
+		}
+	}
+
+	&__item {
+		font-size: 16px;
+
+	&--active {
+		background-color: $primary;
+		color: $white;
+	}
+
+		&--inner {
+			font-size: 14px;
+			color: $white;
+			background-color: $primary-dark;
+		}
+	}
+}

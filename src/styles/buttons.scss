@@ -1,0 +1,11 @@
+.button{
+	color: $white;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-family: inherit;
+
+	&--gray {
+		background-color: $gray;
+	}
+}

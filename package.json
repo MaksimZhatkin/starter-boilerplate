@@ -16,20 +16,13 @@
   },
   "homepage": "",
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "babel": "^6.23.0",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
-    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-imagemin": "^6.1.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-svgmin": "^2.2.0",
-    "gulp-terser": "^1.2.0"
+    "gulp-sass": "^4.0.2"
   },
   "dependencies": {
     "gulp-cli": "^2.2.0"
